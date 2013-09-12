@@ -16,5 +16,4 @@ path_f1=${path}${file1}
 path_f2=${path}${file2}
 path_f3=${path}${file3}
 
-
 curl -i -X POST http://www.threecandy/api/newmodel/ -H "Content-Type: multipart/form-data" -u ${username}:${password} -F "picture=@${path_pict}" -F "file1=@${path_f1}" -F "file2=@${path_f2}" -F "file3=@${path_f3}" -F "name=${modelName}" -F "category=${category}" -F "description=${description}" -F "tags=${tags}"
